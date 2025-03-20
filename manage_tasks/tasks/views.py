@@ -45,7 +45,7 @@ def manage_task(request):
         try:
             client = genai.Client(api_key=settings.GENAI_API_KEY)  # Use the API key from settings
             response = client.models.generate_content(
-                model="gemini-2.0-flash", contents=f"Explain how {task_name} works"  # Update content based on task name
+                model="gemini-2.0-flash", contents=f"I have a task:{task_name} . Break it down into smaller, actionable steps that are clear, manageable, and ordered logically. Each step should be specific and concise, ensuring steady progress toward completing the main task. If possible, suggest any tools, techniques, or resources that might help."  # Update content based on task name
             )
             logger.info("Response Content: {}".format(response.text))
             breakdown = response.text  # Adjust this line based on the new API response structure
