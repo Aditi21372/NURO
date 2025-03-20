@@ -1,0 +1,39 @@
+/* static/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+.loading {
+    font-size: 18px;
+    color: #007BFF; /* Blue color for loading text */
+    margin-top: 10px;
+}
+
+.error {
+    color: red; /* Red color for error messages */
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
