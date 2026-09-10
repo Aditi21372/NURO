@@ -1,0 +1,14 @@
+# Secrets & env
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Django
+*.sqlite3
+
+# Editor/OS
+.DS_Store
